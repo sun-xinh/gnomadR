@@ -25,14 +25,15 @@ NULL
 ReferenceGenomeIds <- c("GRCh38", "GRCh37")
 attr(ReferenceGenomeIds, "defDatasetOpt") <-
   glue("gnomadr.{ReferenceGenomeIds}.dataset")
-attr(ReferenceGenomeIds, "defDataset") <- c("gnomad_r3", "gnomad_r2_1")
+attr(ReferenceGenomeIds, "defDataset") <- c("gnomad_r4", "gnomad_r2_1")
 attr(ReferenceGenomeIds, "liftoverIdName") <-
   c("liftover_variant_id", "source_variant_id")
 
 #' @rdname gnomad-ids
 #' @export
 
-DatasetIds <- c("gnomad_r3",
+DatasetIds <- c("gnomad_r4",
+                "gnomad_r3",
                 "gnomad_r3_controls_and_biobanks",
                 "gnomad_r3_non_cancer",
                 "gnomad_r3_non_neuro",
